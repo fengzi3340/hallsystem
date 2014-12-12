@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+		"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<include file="struts-default.xml" />
+	<constant name="struts.locale" value="zh_CN"/>
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	
+	<package name="org.action" namespace="/" extends="struts-default">
+		<action name="login" class="org.action.UserAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="look" class="org.action.LookAction">
+			<result name="damei1">/damei1.jsp</result>
+			<result name="damei2">/damei2.jsp</result>
+			<result name="damei3">/damei3.jsp</result>
+			<result name="xiaomei1">/xiaomei1.jsp</result>
+			<result name="xiaomei2">/xiaomei2.jsp</result>
+			<result name="xiaomei3">/xiaomei3.jsp</result>
+			<result name="xiaomei4">/xiaomei4.jsp</result>
+			<result name="false">/false.jsp</result>
+		</action>
+		
+	</package>
+</struts>    
